@@ -14,6 +14,7 @@ if (!file_exists('../db/users.xml')) {
 <?xml version='1.0' standalone='yes'?>
 <users></users>
 XML;
+    mkdir('../db');
     $f = fopen("../db/users.xml", "w");
     fwrite($f, $xmlstr);
     fclose($f);
